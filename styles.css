@@ -74,8 +74,8 @@ main {
 .button {
     background-color: #7FB1C8; /* Cor do botão */
     color: #F4E6CB; /* Cor do texto */
-    padding: 15px 30px; /* Espaço interno para o botão */
-    font-size: 1.5rem; /* Tamanho do texto */
+    padding: 12px 24px; /* Reduzi 20% do espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte fixado como 20px */
     font-family: 'BasicChoice', sans-serif; /* Fonte personalizada */
     border: none; /* Remove borda padrão */
     text-decoration: none; /* Remove sublinhado */
@@ -83,7 +83,7 @@ main {
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
     margin-top: 20px; /* Margem superior */
-    border-radius: 30px; /* Borda arredondada */
+    border-radius: 24px; /* Mantém proporção arredondada */
     text-align: center; /* Alinha texto ao centro */
     height: auto; /* Altura ajustável */
     transition: all 0.3s ease; /* Suaviza o hover */
@@ -135,8 +135,8 @@ footer {
     }
 
     .button {
-        font-size: 1.8rem; /* Botão ainda maior em telas reduzidas */
-        padding: 20px 35px; /* Aumenta o tamanho do botão */
-        border-radius: 40px; /* Mantém o arredondamento maior */
+        font-size: 20px; /* Mantém o tamanho da fonte do botão */
+        padding: 16px 28px; /* Ajuste para versão móvel */
+        border-radius: 32px; /* Proporção mantida */
     }
 }
