@@ -1,1 +1,1 @@
-// Placeholder for any necessary JS functionality, if needed
+// Placeholder para funcionalidades futuras
