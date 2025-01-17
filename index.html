@@ -3,49 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAVU - Cozinha Afetiva</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>FAVU</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonte personalizada -->
+    <style>
+        @font-face {
+            font-family: 'BasicChoice';
+            src: url('Basic Choice 2.ttf') format('truetype');
+        }
+    </style>
 </head>
 <body>
-    <!-- Cabeçalho com imagem topo.png -->
     <header>
-        <img src="images/topo.png" alt="Imagem Cabeçalho" class="header-image">
+        <img src="images/topo.png" alt="Cabeçalho" id="header-image">
     </header>
 
-    <!-- Conteúdo Principal -->
     <main>
-        <!-- Imagem Centralizada e Margem -->
-        <section class="main-content">
-            <img src="images/favu.png" alt="Imagem FAVU" class="main-image">
-        </section>
-
-        <!-- Seção dos Botões -->
-        <div class="buttons-section">
-            <div class="buttons-container">
-                <a href="quem-somos.html" class="button">Quem Somos</a>
-                <a href="https://tinyurl.com/MenuFavu" class="button">Cardápio de Natal</a>
-                <a href="https://www.instagram.com/favucozinha/" class="button">Segue a Gente!</a>
-                <a href="https://wa.me/558199591775" class="button">Pedidos</a>
+        <div class="content">
+            <img src="images/BS3.png" alt="Imagem" class="left-image">
+            <div class="text-container">
+                <p>
+                    Inspirada nas receitas e lembranças de família, juntamos a tradição e a criatividade para criar pratos, bolos e salgados sob encomenda, uma coisa melhor que a outra.
+                    <br><br>
+                    Tudo artesanal, feito a quatro mãos, de mãe para filho, com ingredientes selecionados e um toque especial que só a FAVU tem!
+                    <br><br>
+                    Faça sua encomenda e vamos transformar seus momentos especiais em inesquecíveis!
+                </p>
+                <a href="https://favucozinha.github.io/Inicio/" class="button">Voltar</a>
             </div>
         </div>
-
-        <!-- Slideshow -->
-        <section class="slideshow-section">
-            <div class="slideshow">
-                <div class="slide"><img src="images/s1.png" alt="Imagem 1"></div>
-                <div class="slide"><img src="images/s2.png" alt="Imagem 2"></div>
-                <div class="slide"><img src="images/s3.png" alt="Imagem 3"></div>
-                <div class="slide"><img src="images/s4.png" alt="Imagem 4"></div>
-                <div class="slide"><img src="images/s5.png" alt="Imagem 5"></div>
-                <div class="slide"><img src="images/s6.png" alt="Imagem 6"></div>
-                <div class="slide"><img src="images/b1.png" alt="Imagem B1"></div>
-            </div>
-        </section>
     </main>
 
-    <!-- Rodapé com a imagem "roda.png" -->
     <footer>
-        <img src="images/roda.png" alt="Imagem de rodapé" class="footer-image">
+        <img src="images/roda.png" alt="Rodapé" id="footer-image">
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
