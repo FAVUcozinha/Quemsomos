@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ED704F; /* Cor de fundo */
+    font-family: 'BasicChoice', sans-serif; /* Fonte personalizada */
+    color: #1D2814; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    position: relative; /* Cabeçalho rola com a página */
+    z-index: 10;
+}
+
+#header-image {
+    width: 100%;
+}
+
+main {
+    padding-top: 120px; /* Espaço para o cabeçalho */
+    padding-bottom: 120px; /* Espaço para o rodapé */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row; /* Flex direção para layout estendido */
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.left-image {
+    height: auto; /* A imagem pode ter altura automática */
+    max-width: 50%; /* Limita a largura máxima da imagem */
+    width: 100%; /* A imagem ocupará 50% na versão estendida */
+    object-fit: cover;
+    position: relative;
+    z-index: -1; /* A imagem fica atrás do texto */
+}
+
+.text-container {
+    background-color: #F4E6CB; /* Cor do retângulo */
+    width: auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centraliza o texto dentro do retângulo */
+}
+
+.text-container p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #1D2814;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.button {
+    background-color: #399466; /* Cor do botão */
+    color: #F4E6CB; /* Cor do texto */
+    padding: 12px 24px; /* Reduzi 20% do espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte fixado como 20px */
+    font-family: 'BasicChoice', sans-serif; /* Fonte personalizada */
+    border: none; /* Remove borda padrão */
+    text-decoration: none; /* Remove sublinhado */
+    display: flex; /* Usar flexbox para centralizar */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Margem superior */
+    border-radius: 24px; /* Mantém proporção arredondada */
+    text-align: center; /* Alinha texto ao centro */
+    height: auto; /* Altura ajustável */
+    transition: all 0.3s ease; /* Suaviza o hover */
+    cursor: pointer; /* Indicador de botão clicável */
+    box-sizing: border-box; /* Inclui padding no cálculo total */
+    line-height: normal; /* Garante alinhamento correto do texto */
+}
+
+.button:hover {
+    background-color: #679AB1; /* Cor de destaque no hover */
+}
+
+footer {
+    width: 100%;
+    position: relative; /* Rodapé rola com a página */
+    bottom: 0;
+    left: 0;
+}
+
+#footer-image {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Layout de coluna para tela menor */
+        padding: 10px;
+    }
+
+    .left-image {
+        width: 100%; /* A imagem ocupa 100% na versão encurtada */
+        height: auto;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left-image {
+        max-width: 80%; /* Aumenta o tamanho da imagem na versão reduzida */
+        margin: 0 auto; /* Centraliza a imagem */
+        display: block;
+    }
+
+    .text-container p {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        font-size: 20px; /* Mantém o tamanho da fonte do botão */
+        padding: 16px 28px; /* Ajuste para versão móvel */
+        border-radius: 32px; /* Proporção mantida */
+    }
+}
